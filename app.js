@@ -1,7 +1,7 @@
 Vue.config.devtools = true;
 
 
-Vue.component('header', {
+Vue.component('top-header', {
   template: '<h1>Weather App</h1>'
 })
 var app = new Vue({
@@ -10,7 +10,7 @@ var app = new Vue({
     return {
       name: '',
       info: '',
-      country: '',
+    //   country: '',
       temp: '',
       
       city: ''
