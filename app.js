@@ -10,7 +10,7 @@ var app = new Vue({
     return {
       name: '',
       info: '',
-    //   country: '',
+      country: '',
       temp: '',
       
       city: ''
