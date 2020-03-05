@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather app</title>
+    <!-- <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+    
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css" />
+  </head>
+<body>
+  <div class="container" id="app">
+    <todo-header></todo-header>
+    <div class="form-group">
+    
+    </div>
+
+  <div class="row" id="app">
+      <div class="col-md-6 mx-auto text-center p-5 rounded">
+          
+          <h1>{{info.name}}, {{info.sys.country}}</h1>
+          <h3>Lämpötila {{info.main.temp}}&deg;</h3>
+          <h3 id="w-string">Tuntuu kuin {{info.main.feels_like}}&deg;</h3>
+          <img id="w-icon" />
+          <ul id="w-details" class="list-group mt-3">
+              <li class="list-group-item" id="w-humidity">Päivän alin {{info.main.temp_min}}&deg;</li>
+              <li class="list-group-item" id="w-wind">Päivän ylin {{info.main.temp_max}}&deg;</li>
+              <li class="list-group-item" id="w-clouds">Kosteus {{ info.main.humidity }}%</li>
+              <li class="list-group-item" id="w-pressure">Tuulennopeus {{ info.wind.speed }}/kmh</li>
+          </ul>
+          <hr />
+          
+          <input type="text" class="form-control" v-model="city" placeholder="Search for a city, as in 'Bangkok'" text-align="text-center">
+          <button type="submit" v-on:click='loadCity()' class="btn btn-default" text-align="text-center">Submit</button>
+      </div>
+  </div>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>  
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
