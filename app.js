@@ -1,7 +1,7 @@
 Vue.config.devtools = true;
 
 
-Vue.component('todo-header', {
+Vue.component('header', {
   template: '<h1>Weather App</h1>'
 })
 var app = new Vue({
