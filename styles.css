@@ -1,16 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
 body {
-  background-color: rgb(236, 212, 216);
   font-family: Poiret One;
 }
 .container {
-    background-color: #E4D6A7;
-    /* background-color: rgb(236, 212, 216); */
+    background-color: rgb(179, 235, 218);    
     font-family: Poiret One;
     padding: 20px;
     display: inline-block;
-    
 }
 p {
   position: fixed;
